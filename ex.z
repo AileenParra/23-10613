@@ -1,0 +1,5 @@
+de_morgan1 = fun(p, q) { !(p && q) == (!p || !q) };
+
+de_morgan2 = fun(p, q) { !(p || q) == (!p && !q) };
+
+succ = fun(z) { z + 1 };
