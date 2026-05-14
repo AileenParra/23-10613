@@ -4,7 +4,7 @@ Prompts utilizados:
 
 Ejercicio 3: Estoy aprendiendo C++ y necesito calcular el promedio y la varianza de unos datos que tengo en un vector. La varianza sería la muestral, la que divide entre n-1. Me puedes ayudar con las funciones mean y variance?
 
-Ejercicio 4: Tengo dos vectores con datos y quiero ver si están correlacionados. Necesito implementar el coeficiente de Pearson en C++, pero sin usar librerías raras, solo con lo básico. Cómo se hace?
+Ejercicio 4: Tengo dos vectores con datos y quiero ver si están asociados. Necesito implementar el coeficiente de Pearson en C++, pero sin usar librerías raras, solo con lo básico. Cómo se hace?
 
 Ejercicio 5: Me dieron un ejercicio de conversión entre bases numéricas (base 7, 8, 10 y 16) en C++. Las funciones deben devolver vector<char> y las firmas ya están dadas. Se me ocurre pasar todo por decimal para hacer las conversiones. Está bien esa idea? Cómo la implemento?
 
