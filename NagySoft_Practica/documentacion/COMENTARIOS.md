@@ -72,15 +72,20 @@ El Dr. Szilard advierte: "Una clasificación con más clusters de los necesarios
 4. Cuando la mejora es menor al 10% de la mejora inicial, ese es el "codo"
 
 ### Ejemplo visual
+
 Dispersion
-|
-|
-| __
-| ___ ← CODO (k óptimo)
-| ___
-| ___
-+----------------→ k
-1 2 3 4 5 6
+    |
+    |  \
+    |   \
+    |    \
+    |     \
+    |      \____
+    |           \___
+    |              \___  ← CODO (k optimo)
+    |                 \___
+    |                    \___
+    +------------------------→ k
+     1   2   3   4   5   6
 
 ### ¿Por qué funciona?
 Si agregar un cluster más apenas mejora la dispersión, ese cluster extra es "overfitting" (ruido, no estructura real).
