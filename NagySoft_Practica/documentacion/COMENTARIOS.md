@@ -99,11 +99,14 @@ Si agregar un cluster más apenas mejora la dispersión, ese cluster extra es "o
 
 ### Estructura que usé
 main.cpp ← Programa principal
+
 ↓
 DataLoader.cpp ← Carga datos desde CSV
 ↓
+
 KMeans.cpp ← Algoritmo k-means
 ↓
+
 Archivos de salida ← clasificados.csv y summary.txt
 
 
