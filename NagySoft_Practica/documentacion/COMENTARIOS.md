@@ -135,7 +135,7 @@ Archivos de salida ← clasificados.csv y summary.txt
 
 | Si el usuario pide... | El programa hace... |
 |----------------------|---------------------|
-| k = 1, 2, 3, 4, 5, 6 | Usa ese k (respeto su decisión) |
+| k = 1, 2, 3, 4, 5, 6 | Usa ese k  |
 | k > 6 | Ignora al usuario, evalúa k=1..6 y elige el mejor |
 
 ### ¿Qué k elegí para el summary.txt?
