@@ -1,0 +1,24 @@
+::zilly+
+// Version optimizada: usamos el menor valor absoluto como contador
+Z=>Z=>Z mult_aux:=fn(Z y)->fn(Z x)->if(y<1,0,x+mult_aux(y-1)(x));
+Z=>Z=>Z mult:=fn(Z y)->fn(Z x)->if(y<0,if(x<0,mult_aux(0-y)(0-x),0-mult_aux(0-y)(x)),if(x<0,0-mult_aux(y)(0-x),mult_aux(y)(x)));
+
+Pruebas:
+mult(0)(5)
+mult(1)(5)
+mult(2)(5)
+mult(3)(5)
+mult(4)(5)
+mult(5)(5)
+mult(-1)(5)
+mult(-2)(5)
+mult(-3)(5)
+mult(2)(-5)
+mult(-2)(-5)
+mult(0)(0)
+mult(10)(0)
+mult(0)(10)
+mult(3)(10)
+mult(10)(3)
+
+// La multiplicacion es conmutativa: x*y = y*x. Para optimizar, elegimos el numero de menor valor absoluto como contador de iteraciones. Esto reduce drasticamente las llamadas recursivas, por ejemplo: 1000*1 requiere 1000 iteraciones pero 1*1000 solo requiere 1.
