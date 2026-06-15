@@ -21,4 +21,5 @@ mult(0)(10)
 mult(3)(10)
 mult(10)(3)
 
-// La multiplicacion es conmutativa: x*y = y*x. Para optimizar, elegimos el numero de menor valor absoluto como contador de iteraciones. Esto reduce drasticamente las llamadas recursivas, por ejemplo: 1000*1 requiere 1000 iteraciones pero 1*1000 solo requiere 1.
+La multiplicación es conmutativa: xy = yx. Para optimizar, siempre llamamos a la función con el número de menor valor absoluto como primer argumento (el contador de iteraciones), reduciendo así la cantidad de llamadas recursivas. Por ejemplo, en lugar de mult(1000)(1), usamos mult(1)(1000) que solo requiere 1 iteración en lugar de 1000.
+
